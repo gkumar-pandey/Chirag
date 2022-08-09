@@ -1,0 +1,27 @@
+.nav-bar {
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links{
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-links ul li {
+    text-decoration: none;
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 5px;
+    
+}
