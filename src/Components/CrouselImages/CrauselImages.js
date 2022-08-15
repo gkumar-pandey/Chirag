@@ -15,6 +15,7 @@ import { useTheme } from "@mui/system";
 function CrauselImages() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  
   const photoForSlider = [img1, img3, img4, img5, img6];
 
   return (
