@@ -1,0 +1,34 @@
+.banner-container {
+  width: 100%;
+  border: 1px solid red;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7c7a0;
+}
+
+.banner-container img {
+  height: 80px;
+  width: 80px;
+}
+.logoText{
+    border: 1px solid yellow;
+    width: 100%;
+    text-align: center;
+}
+.banner-container .logo{
+    font-family: 'Ultra', serif;
+    font-size: 2.4rem;
+}
+.banner-container .moving-text{
+    border: 1px solid greenyellow;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+  .banner-container img {
+    height: 60px;
+    width: 60px;
+  }
+}

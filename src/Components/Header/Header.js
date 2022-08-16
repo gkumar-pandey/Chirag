@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: "#FD7014" }}>
         <Toolbar style={{ justifyContent: isMobile ? "start" : "center" }}>
           {isMobile ? <DrawerComp /> : <Navbar />}
         </Toolbar>

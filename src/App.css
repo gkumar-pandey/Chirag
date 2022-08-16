@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Ultra&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: #F9F9F9; */
 }
 
 .text-container {
@@ -12,6 +14,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  background-color: #F9F9F9;
 }
 .heading {
   color: orange;
@@ -25,14 +28,25 @@
   font-size: 1.4rem;
   text-align: justify;
 }
+iframe{
+  width: 50%;
+  height: 350px;
+  padding: 8px;
+}
 
 @media (max-width: 600px) {
   .text-container {
     width: 100%;
   }
+  .heading{
+    font-size: 1.5rem;
+  }
   .text-container p {
     width: 100%;
     padding: 5px 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  iframe{
+    width: 100%;
   }
 }
