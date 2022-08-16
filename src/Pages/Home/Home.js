@@ -1,6 +1,7 @@
 import React from "react";
 import CrauselImages from "../../Components/CrouselImages/CrauselImages";
 import Mission from "./Mission";
+import NewaLetter from "./NewaLetter";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
           allowfullscreen
         ></iframe>
       </div>
+      <NewaLetter />
     </div>
   );
 }
