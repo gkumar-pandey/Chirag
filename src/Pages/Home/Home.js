@@ -1,5 +1,6 @@
 import React from "react";
 import CrauselImages from "../../Components/CrouselImages/CrauselImages";
+import Testinomial from "../../Components/TestinomialCrousel/Testinomial";
 import Mission from "./Mission";
 import NewaLetter from "./NewaLetter";
 
@@ -18,6 +19,7 @@ function Home() {
         ></iframe>
       </div>
       <NewaLetter />
+      <Testinomial />
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.testinomial-card-container {
+  border: 1px solid rgb(24, 22, 22);
+  border-radius: 8px;
+  margin: auto;
+  padding: 0.8rem;
+  background-color: #eee;
+}
+
+.avtar-about-container {
+  display: flex;
+  align-items: center;
+
+}
+.about-avatar {
+  height: 50px;
+  padding: 50px 1rem;
+}
+.about-avatar p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.feedback-text{
+    font-size: 1.2rem;
+    text-align: justify;
+    word-spacing: -2px;
+}

@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import AddressLocation from "./AddressLocation";
+import SocialMediaIconsLink from "./SocialMediaIconsLink";
 
 function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <div>
+      <AddressLocation />
+      <SocialMediaIconsLink />
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
