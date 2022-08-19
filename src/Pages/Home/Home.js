@@ -1,5 +1,6 @@
 import React from "react";
 import CrauselImages from "../../Components/CrouselImages/CrauselImages";
+import Footer from "../../Components/Footer/Footer";
 import Testinomial from "../../Components/TestinomialCrousel/Testinomial";
 import Mission from "./Mission";
 import NewaLetter from "./NewaLetter";
@@ -20,6 +21,7 @@ function Home() {
       </div>
       <NewaLetter />
       <Testinomial />
+      <Footer />
     </div>
   );
 }

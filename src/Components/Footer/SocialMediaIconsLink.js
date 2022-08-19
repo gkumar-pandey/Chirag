@@ -8,7 +8,7 @@ import youtube from "../../Assets/SocialMediaIcons/youtube.png";
 const socialMedia = [
   {
     icon: fbIcon,
-    link: "",
+    link: "https://www.facebook.com/ncechirag/",
   },
   {
     icon: instaIcon,
@@ -16,27 +16,27 @@ const socialMedia = [
   },
   {
     icon: linkedinIcon,
-    link: "",
+    link: "https://www.linkedin.com/company/chirag-an-initiative-of-nceians/about/?viewAsMember=true",
   },
   {
     icon: twitterIcon,
-    link: "",
+    link: "https://twitter.com/ncechirag",
   },
   {
     icon: youtube,
-    link: "",
+    link: "https://www.youtube.com/channel/UCaIHyPCg1q-DwZ46AM48H1w",
   },
 ];
 
 function SocialMediaIconsLink() {
   return (
     <>
-      <div className="social-meida-contianer">
-        <p>We are on Social Media </p>
+      <div className="social-media-contianer">
+        <p>We are on Social Media :</p>
         {socialMedia.map((item, idx) => {
           return (
-            <a href={item.link}>
-              <img src={item.icon} />
+            <a href={item.link} target='_blank_' >
+              <img className="social-media-icon" src={item.icon} />
             </a>
           );
         })}
