@@ -28,7 +28,7 @@
   color: rgb(239, 91, 12);
   width: 100%;
   letter-spacing: 2px;
-  text-shadow: 3px -1px 0px  rgb(239, 91, 12);
+  /* text-shadow: 3px -1px 0px  rgb(239, 91, 12); */
 }
  
  
@@ -40,5 +40,10 @@
   }
   .banner-container .moving-text{
     font-size: 1.1rem;
+  }
+}
+@media (max-width:375px){
+  .banner-container .moving-text {
+    font-size: 0.9rem;
   }
 }
