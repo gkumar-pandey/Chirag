@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { Button, Stack } from "@mui/material";
+import ChiragLogo from "../../Assets/Images/Chirag-Logo.png";
 
 function Navbar() {
   const navItem = [
@@ -46,6 +47,7 @@ function Navbar() {
           justifyContent: "center",
         }}
       >
+        <img src={ChiragLogo} style={{ height: "50px", weight: "50px" }} />
         {navItem.map((item, idx) => {
           return (
             <Link to={item.link} style={customStyle.link}>

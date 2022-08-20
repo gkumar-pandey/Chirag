@@ -9,6 +9,8 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ChiragLogo from "../../Assets/Images/Chirag-Logo.png";
+
 function DrawerComp() {
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -50,6 +52,7 @@ function DrawerComp() {
         onClose={() => setOpenDrawer(false)}
       >
         <List>
+          
           {navItem.map((item, idx) => {
             return (
               <ListItem onClick={() => setOpenDrawer(false)}>
@@ -73,6 +76,7 @@ function DrawerComp() {
       <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
         <MenuIcon sx={{color: 'white',}} fontSize='large' />
       </IconButton>
+      <img src={ChiragLogo} style={{height:'60px', weight:'60px', marginLeft:'30%'}} />
     </>
   );
 }
