@@ -13,9 +13,8 @@ function NewaLetter() {
   const NewsPic = [news1, news2];
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  isMobile ? console.log("Mobile") : console.log("not Mobile");
   return (
-    <div>
+    <div className="container">
       <h2 className="heading">News</h2>
       <div>
         <Swiper
@@ -33,8 +32,8 @@ function NewaLetter() {
           style={{
             height: isMobile ? "400px" : "500px",
             width: isMobile ? "100%" : "50%",
-            border: "5px solid orange",
-            padding: "8px",
+            
+            
             borderRadius: "10px",
           }}
         >

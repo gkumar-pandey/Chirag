@@ -4,23 +4,25 @@ import { useMediaQuery } from "@mui/material";
 import { ParallaxBanner } from "react-scroll-parallax";
 import "./DonateBanner.css";
 import img15 from "../../Assets/Images/img15.jpg";
+import img14 from "../../Assets/Images/img14.jpg";
+
 import donationImg from "../../Assets/Images/donation.png";
 import Button from "../Button/Button";
 function DonateComponent() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <div className="donate-container">
+    <div className="donate-container container">
       <ParallaxBanner
         className="bannerBg"
         style={{
           aspectRatio: "2 / 1",
-          width: isMobile ? "100%" : "60%",
+          width: isMobile ? "100%" : "100%",
           height: "",
         }}
         layers={[
           {
-            image: img15,
+            image:isMobile? img15: img14,
             speed: -50,
           },
         ]}

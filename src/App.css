@@ -1,27 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Ultra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Ultra&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #F9F9F9; */
 }
+.container{
+  background-color: #CEE5D0;
 
+}
 .text-container {
-  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #F9F9F9;
+  background-color: #CEE5D0;
 }
 .heading {
-  color: orange;
+  color: #E04D01;
   font-size: 2rem;
   margin: auto;
   text-align: center;
-
+  text-transform: uppercase;
+  width: max-content;
+  letter-spacing: 2px;
+  border-bottom: 5px solid red;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
 }
 .text-container p {
   /* border: 1px solid red */
@@ -30,7 +36,7 @@
   font-size: 1.4rem;
   text-align: justify;
 }
-iframe{
+iframe {
   width: 50%;
   height: 400px;
   padding: 8px;
@@ -40,15 +46,15 @@ iframe{
   .text-container {
     width: 100%;
   }
-  .heading{
-    font-size: 1.5rem;
+  .heading {
+    font-size: 1.3rem;
   }
   .text-container p {
     width: 100%;
     padding: 5px 10px;
     font-size: 1.3rem;
   }
-  iframe{
+  iframe {
     width: 100%;
   }
 }

@@ -12,7 +12,7 @@ function Testinomial() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <>
+    <div className="container">
       <h2 className="heading">Testinomial</h2>
 
       <Swiper
@@ -40,7 +40,7 @@ function Testinomial() {
           <TestinomialCard />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 

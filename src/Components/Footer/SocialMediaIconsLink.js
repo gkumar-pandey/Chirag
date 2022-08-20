@@ -3,7 +3,7 @@ import socialMedia from "../../Data/Data";
 
 function SocialMediaIconsLink() {
   return (
-    <>
+    <div className="footer" >
       <div className="social-media-contianer">
         <p>We are on Social Media :)</p>
         {socialMedia.map((item, idx) => {
@@ -18,7 +18,7 @@ function SocialMediaIconsLink() {
         <p>Copyright &#169; 2022 Chirag All Rights Reserved</p>
         <p>Developed and Maintained By:~ <a href="">Gautam..</a></p>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -10,11 +10,11 @@ function Home() {
     <div>
       <CrauselImages />
       <Mission />
-      <div style={coustemStyle.video}>
+      <div style={coustemStyle.video} className='container' >
         <iframe
           src="https://www.youtube.com/embed/SDowWf86Wic"
           title="YouTube video player"
-          frameBorder='1'
+          frameBorder='0'
           style={{borderRadius: '8px'}}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           
@@ -23,7 +23,6 @@ function Home() {
       <NewaLetter />
       <DonateComponent />
       <Testinomial />
-      {/* <Footer /> */}
     </div>
   );
 }
@@ -31,7 +30,6 @@ function Home() {
 const coustemStyle = {
   video: {
     textAlign: "center",
-    // border: '1px solid red'
   },
 };
 
