@@ -10,6 +10,7 @@ import Header from "./Components/Header/Header";
 import { CssBaseline } from "@mui/material";
 import Footer from "./Components/Footer/Footer";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Contribution from "./Pages/Contribution/Contribution";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/video" element={<Video />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/contribution" element={<Contribution />} />
           </Routes>
           <Footer />
         </Router>

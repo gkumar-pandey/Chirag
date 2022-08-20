@@ -33,9 +33,8 @@
 
 .address-map {
   width: 500px;
-  padding: 0.4rem;
+  /* border: 1px solid red; */
   border-radius: 5px;
-  border-color: #eee;
 }
 .google-map-container {
   width: 100%;

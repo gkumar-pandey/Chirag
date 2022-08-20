@@ -16,7 +16,7 @@ function NewaLetter() {
   return (
     <div className="container">
       <h2 className="heading">News</h2>
-      <div>
+      <div style={{ padding: "0.5rem" }}>
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -32,9 +32,9 @@ function NewaLetter() {
           style={{
             height: isMobile ? "400px" : "500px",
             width: isMobile ? "100%" : "50%",
-            
-            
-            borderRadius: "10px",
+            padding:'2px',
+            border: "2px solid #E04D01",
+            borderRadius: "5px",
           }}
         >
           {NewsPic.map((img) => {

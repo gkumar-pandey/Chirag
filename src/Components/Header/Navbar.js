@@ -19,8 +19,8 @@ function Navbar() {
       link: "/gallery",
     },
     {
-      name: "contirbution",
-      link: "/contirbution",
+      name: "contribution",
+      link: "/contribution",
     },
     {
       name: "video",

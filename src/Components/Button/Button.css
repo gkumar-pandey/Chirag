@@ -1,5 +1,4 @@
 .btn {
-  /* border: 1px solid red; */
   padding: 10px 1.5rem;
   font-size: 1.3rem;
   font-weight: bold;
@@ -7,4 +6,5 @@
   color: #fff;
   border-radius: 2rem;
   border: none;
+  cursor: pointer;
 }

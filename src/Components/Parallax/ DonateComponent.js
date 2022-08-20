@@ -8,6 +8,7 @@ import img14 from "../../Assets/Images/img14.jpg";
 
 import donationImg from "../../Assets/Images/donation.png";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 function DonateComponent() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -22,7 +23,7 @@ function DonateComponent() {
         }}
         layers={[
           {
-            image:isMobile? img15: img14,
+            image: isMobile ? img15 : img14,
             speed: -50,
           },
         ]}
@@ -30,7 +31,9 @@ function DonateComponent() {
         <div className="donate-text-container" style={{ position: "absolute" }}>
           <img src={donationImg} style={coustemStyle.donationLogo} />
           <h1>EVEN SMALL CONTRIBUTIONS CREATE LARGE IMPACTS</h1>
-          <Button btnName="DONATE NOW" />
+          <Link to={'/contribution'} >
+            <Button btnName="DONATE NOW" />
+          </Link>
         </div>
       </ParallaxBanner>
     </div>
@@ -44,7 +47,7 @@ const coustemStyle = {
   donationLogo: {
     height: "100px",
     padding: "0.4rem",
-    margin:'1rem'
+    margin: "1rem",
   },
 };
 export default DonateComponent;

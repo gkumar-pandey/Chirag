@@ -16,7 +16,7 @@ function SocialMediaIconsLink() {
       </div>
       <div className="copyright-container">
         <p>Copyright &#169; 2022 Chirag All Rights Reserved</p>
-        <p>Developed and Maintained By:~ <a href="">Gautam..</a></p>
+        <p>Developed By:~ <a href="" style={{color:'#fff',fontSize:'1.2rem',textDecoration:'none'}} >Vanisha</a></p>
       </div>
     </div>
   );
