@@ -32,8 +32,8 @@ function DrawerComp() {
       link: "/contirbution",
     },
     {
-      name: "video",
-      link: "/video",
+      name: "our team",
+      link: "/team",
     },
     {
       name: "About us",
@@ -50,22 +50,27 @@ function DrawerComp() {
         anchor="left"
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
+        PaperProps={{ sx: { width: "50%", backgroundColor: "#162842" } }}
       >
-        <List>
-          
+        <List sx={{ marginTop: "4rem" }}>
           {navItem.map((item, idx) => {
             return (
-              <ListItem onClick={() => setOpenDrawer(false)}>
+              <ListItem key={idx} onClick={() => setOpenDrawer(false)}>
                 <ListItemText>
                   <Link
                     to={item.link}
                     style={{
                       textDecoration: "none",
-                      color: "black",
+                      color: "white",
                       fontSize: "1.6rem",
                     }}
                   >
-                    <Button color="inherit">{item.name}</Button>
+                    <Button
+                      color="inherit"
+                      style={{ fontSize: "1rem", fontWeight: "bold" }}
+                    >
+                      {item.name}
+                    </Button>
                   </Link>
                 </ListItemText>
               </ListItem>
@@ -74,9 +79,12 @@ function DrawerComp() {
         </List>
       </Drawer>
       <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon sx={{color: 'white',}} fontSize='large' />
+        <MenuIcon sx={{ color: "white" }} fontSize="large" />
       </IconButton>
-      <img src={ChiragLogo} style={{height:'60px', weight:'60px', marginLeft:'30%'}} />
+      <img
+        src={ChiragLogo}
+        style={{ height: "60px", weight: "60px", marginLeft: "30%" }}
+      />
     </>
   );
 }

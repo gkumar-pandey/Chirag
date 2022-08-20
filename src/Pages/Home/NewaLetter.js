@@ -37,9 +37,9 @@ function NewaLetter() {
             borderRadius: "5px",
           }}
         >
-          {NewsPic.map((img) => {
+          {NewsPic.map((img,idx) => {
             return (
-              <SwiperSlide style={{ borderRadius: "10px" }}>
+              <SwiperSlide key={idx} style={{ borderRadius: "10px" }}>
                 <img src={img} style={{ height: "100%", width: "100%" }} />
               </SwiperSlide>
             );

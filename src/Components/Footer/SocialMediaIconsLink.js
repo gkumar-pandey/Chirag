@@ -8,7 +8,7 @@ function SocialMediaIconsLink() {
         <p>We are on Social Media :)</p>
         {socialMedia.map((item, idx) => {
           return (
-            <a href={item.link} target="_blank_">
+            <a key={idx} href={item.link} target="_blank_">
               <img className="social-media-icon" src={item.icon} />
             </a>
           );

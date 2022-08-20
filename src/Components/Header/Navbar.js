@@ -23,8 +23,8 @@ function Navbar() {
       link: "/contribution",
     },
     {
-      name: "video",
-      link: "/video",
+      name: "Our Team",
+      link: "/team",
     },
     {
       name: "About us",
@@ -50,7 +50,7 @@ function Navbar() {
         <img src={ChiragLogo} style={{ height: "50px", weight: "50px" }} />
         {navItem.map((item, idx) => {
           return (
-            <Link to={item.link} style={customStyle.link}>
+            <Link key={idx} to={item.link} style={customStyle.link}>
               <Button color="inherit">{item.name}</Button>
             </Link>
           );

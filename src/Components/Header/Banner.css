@@ -22,18 +22,23 @@
   color: #EF5B0C;
 }
 .banner-container .moving-text {
-  /* border: 1px solid greenyellow; */
   font-size: 1.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #EF5B0C;
+  color: rgb(239, 91, 12);
   width: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-shadow: 3px -1px 0px  rgb(239, 91, 12);
 }
+ 
+ 
 
 @media (max-width: 600px) {
   .banner-container img {
     height: 60px;
     width: 60px;
+  }
+  .banner-container .moving-text{
+    font-size: 1.1rem;
   }
 }

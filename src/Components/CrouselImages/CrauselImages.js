@@ -18,6 +18,7 @@ function CrauselImages() {
   
   const photoForSlider = [img1, img3, img4, img5, img6];
 
+
   return (
     <>
       <Swiper
@@ -34,9 +35,9 @@ function CrauselImages() {
         modules={[Autoplay, Pagination, Navigation]}
         style={{ height: isMobile ? "400px" : "600px" }}
       >
-        {photoForSlider.map((img) => {
+        {photoForSlider.map((img,idx) => {
           return (
-            <SwiperSlide style={style.slide}>
+            <SwiperSlide key={idx} style={style.slide}>
               <img src={img} style={style.img} />
             </SwiperSlide>
           );
