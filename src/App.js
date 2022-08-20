@@ -9,23 +9,26 @@ import Contact from "./Pages/Contact/Contact";
 import Header from "./Components/Header/Header";
 import { CssBaseline } from "@mui/material";
 import Footer from "./Components/Footer/Footer";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   return (
     <div>
       <CssBaseline />
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/activity" element={<Activity />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/video" element={<Video />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <ParallaxProvider>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/activity" element={<Activity />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/video" element={<Video />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </ParallaxProvider>
     </div>
   );
 }

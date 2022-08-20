@@ -3,6 +3,7 @@ import CrauselImages from "../../Components/CrouselImages/CrauselImages";
 import Testinomial from "../../Components/TestinomialCrousel/Testinomial";
 import Mission from "./Mission";
 import NewaLetter from "./NewaLetter";
+import DonateComponent from "../../Components/Parallax/ DonateComponent";
 
 function Home() {
   return (
@@ -13,12 +14,14 @@ function Home() {
         <iframe
           src="https://www.youtube.com/embed/SDowWf86Wic"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder='1'
+          style={{borderRadius: '8px'}}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          
         ></iframe>
       </div>
       <NewaLetter />
+      <DonateComponent />
       <Testinomial />
       {/* <Footer /> */}
     </div>
@@ -28,6 +31,7 @@ function Home() {
 const coustemStyle = {
   video: {
     textAlign: "center",
+    // border: '1px solid red'
   },
 };
 
